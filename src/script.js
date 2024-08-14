@@ -14,17 +14,7 @@ const contactsSection = document.querySelector(".contact-section");
 
 headerBtn.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    // if (headerBtn[0].innerHTML == e.target.innerHTML) {
-    //   e.target.style.color = "var(--orange)";
-    // } else {
-    //   e.target.style.color = "none";
-    // }
-    // if (headerBtn[1].innerHTML == e.target.innerHTML) {
-    //   e.target.style.color = "var(--orange)";
-    // } else {
-    //   e.target.style.color = "none";
-    // }
-    console.log(btn);
+    console.log(e.target);
 
     if (e.target.innerHTML == "About") {
       aboutSection.style.display = "block";
